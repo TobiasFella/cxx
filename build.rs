@@ -14,7 +14,6 @@ fn main() {
         .cpp_link_stdlib(None) // linked via link-cplusplus crate
         .std("c++17")
         .warnings_into_errors(cfg!(deny_warnings))
-        .define("_LIBCPP_HAS_COND_CLOCKWAIT", "0")
         .compile("cxxbridge1");
 
     println!("cargo:rerun-if-changed=src/cxx.cc");
