@@ -1,9 +1,9 @@
+#include <pthread.h>
 #include "../include/cxx.h"
 #include <cstdio>
 #include <cstring>
 #include <iostream>
 #include <memory>
-#include <pthread.h>
 
 #ifdef __cpp_lib_bit_cast
 #include <bit>
