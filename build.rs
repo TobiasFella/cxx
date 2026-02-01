@@ -13,6 +13,7 @@ fn main() {
         .cpp(true)
         .cpp_link_stdlib(None) // linked via link-cplusplus crate
         .std("c++17")
+        .define("__ANDROID_API__", "21")
         .warnings_into_errors(cfg!(deny_warnings))
         .compile("cxxbridge1");
 
